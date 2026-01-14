@@ -23,5 +23,10 @@ include:
     shield: corne_left
   - board: nice_nano_v2
     shield: corne_right
+  - board: xiao_ble
+    shield: corne_dongle
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
   - board: nice_nano_v2
+    shield: settings_reset
+  - board: xiao_ble
     shield: settings_reset
